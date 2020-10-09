@@ -6,6 +6,10 @@ WRITTEN BY: Jaime Leal
 EMAIL: jileal@uci.edu
 -->
 
+<!-- 
+  Nav Bar link: https://www.w3schools.com/css/css_navbar.asp
+ -->
+
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Jaime Leal">
@@ -13,14 +17,54 @@ EMAIL: jileal@uci.edu
    <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
   <title>Welcome!</title>
+  <style>
+      ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #4CAF50;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+    </style>
 </head>
 
 <body style="background-color:#5c82bf">
-  <p>
+  <!-- <p>
     <a href="http://validator.w3.org/check?uri=referer">
        W3C validator
     </a>
-  </p>
+  </p> -->
+
+  <ul>
+    <li><a href= "contact.html">Contact</a></li>
+    <li><a href= "resume.html">Resume</a></li>
+  </ul>
+
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -30,7 +74,7 @@ EMAIL: jileal@uci.edu
       </div>
       <div class="col-sm">
         <img src="/Users/jaimeleal/Desktop/inf133Assignment1/a1-personal-portfolio-jaime-leal/IMG_1034.JPG" 
-        style="width:400px;height:400px;" alt="Jaime Leal personal image"/>
+        style="width:400px;height:400px;" alt="Jaime Leal" class= "responsive"/>
         <br>
         this row is for my picture
       </div>
