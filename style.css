@@ -40,14 +40,15 @@ a:link{
     text-decoration: none;
 }
 
-table{
+.wholeTable{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 40%;
+    padding: 50px;    
 }
 
 td{
-    border: 1px solid #111;
+    /* border: 1px solid #111; */
     text-align: center;
     padding: 8px;
 }
@@ -60,4 +61,41 @@ td{
 .para{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    padding: 100px;
+}
+
+.aboutpara{    
+    font-size: x-large;
+    font-family: "Noto Serif TC";
+    padding: 100px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+div.image1 {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(221, 219, 219);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+
+.image1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.text{
+    text-align: center;
+}
+
+.resume{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 200px;
 }
