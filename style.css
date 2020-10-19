@@ -1,3 +1,4 @@
+/* Changes the font size and family for my name in the Home page */
 h1{
     font-size: 25;
     font-family: "DM Serif Display";
@@ -5,6 +6,7 @@ h1{
     padding: 100px 100px;
 }
 
+/* CSS for my image in the home page to put it in a fixed position. */
 .responsive {
     width: 100%;
     height: auto;
@@ -13,33 +15,31 @@ h1{
     margin-right: auto;
 }
 
+/* This is for the about me button in the home page. Centers it below my name */
 .moveButton{
     display: flex;
     justify-content: center;      
 }
 
-img{
-    /* display: block; */
+/* Makes my image round and use padding to move. */
+img{    
     border-radius: 8px;
-    /* margin-left: auto;
-    margin-right: auto; */
     padding: 50px;
 }
 
-/* h1 {
-    text-align: center;
-} */
-
+/* Centers the paragraphs from the about me page. */
 .col-smAboutMe{
     display: flex;
     justify-content: center;
     align-items: center;    
 }
 
+/* Removes the underline from the LinkedIn link in the contact page. */
 a:link{
     text-decoration: none;
 }
 
+/* Changes the text font in the table. Use border-collapse to make table borders touch/flush. */
 .wholeTable{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -47,33 +47,38 @@ a:link{
     padding: 50px;    
 }
 
+/* Removed the border color for the cells to make it look clean and no lines visible. */
 td{
-    /* border: 1px solid #111; */
     text-align: center;
     padding: 8px;
 }
 
+/* Keeps the table in position. */
 .center{
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Moves the text from the contact page lower for and shifted for better visibility.  */
 .para{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 100px;
 }
 
+/* Changes the paragraph font size and family from the About page paragraph. */
 .aboutpara{    
     font-size: x-large;
     font-family: "Noto Serif TC";
     padding: 100px;
 }
 
+/* Makes the strong words from the paragraph bold(er). */
 strong{
     font-weight: bold;
 }
 
+/* Makes the card grey, gives it a shadow, and is placed behind my image in the About Me page. */
 div.image1 {
     width: 300px;
     height: 400px;
@@ -82,7 +87,8 @@ div.image1 {
     margin-bottom: 25px;
   }
 
-.image1{
+/* Centers my actual image. */
+  .image1{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -92,10 +98,16 @@ div.image1 {
     text-align: center;
 }
 
-.resume{
-    width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px 200px;
-}
+/* Creates the cards with shadows for my projects in the Project page. */
+div.vid, div.webcrawler {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+/* Centers the cards in the Projects page. */
+div.container {    
+    text-align: center;
+    padding: 10px 20px;
+  }

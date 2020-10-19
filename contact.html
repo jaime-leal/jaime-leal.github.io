@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+WRITTEN BY: Jaime Leal
+EMAIL: jileal@uci.edu
+-->
+
+<!-- 
+  SOURCES CITED:
+  Nav Bar link: https://getbootstrap.com/docs/4.0/components/navbar/
+ -->
+
     <head>
         <meta charset="utf-8">
         <meta name="author" content="Jaime Leal">
         <meta name="description" content="This is my portfolio and profile :)">
          <!-- you would link to an external stylesheet here! -->
+         <link rel="stylesheet" href="style.css">
          <!-- you would also link to Bootstrap here! -->
-        <title>Contact</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">        
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">        
+        <title>Contact</title>                
     </head>
     
     <body>
+        <!-- This is the navbar with the home, contact, resume, and project tabs -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -20,21 +31,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Home </a>
                 </li>
+                <!-- Make contact tab active and allow for screen reader to read using sr-only. -->
                 <li class="nav-item active">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
                 </li>
               </ul>
             </div>
           </nav>
 
         <div class= "container-fluid">
+            <!-- Use grid system to create a row and two columns for text and a table. -->
             <div class= "row">
                 <div class="col-sm para">
+                    <!-- Use header tag to make text big and easy to read. -->
                     <h2>
                         Feel free to contact me using any of the following outlets!
                         <br>
@@ -42,25 +59,27 @@
                         I look forward to meeting you :)
                     </h2>
                 </div>
-
+                <!-- This is a column for the table with my contact information. -->
                 <div class="col-sm wholeTable">
+                    <!-- Use table tag to create table and table-hover to make it hoverable -->
                     <table class= "table table-hover">                        
+                        <!-- First row with LinkedIn logo and link for my profile -->
                         <tr>
                             <td><img src="iconmonstr-linkedin-3.svg" alt="LinkedIn logo"></td>
                             <td> <a href = "https://www.linkedin.com/in/jaime-leal-164312184/">LinkedIn</a></td>                            
                         </tr>
+                        <!-- Second row with email logo and hyperlink to create an email to me. -->
                         <tr>
                             <td><img src="email-24px.svg" alt="Email logo"></td>
                             <td> <a href= "mailto:jileal@uci.edu"> jileal@uci.edu</a></td>   
                         </tr>
+                        <!-- Third row with smartphone logo and my personal phone number. -->
                         <tr>
                             <td><img src="smartphone-24px.svg" alt="Smartphone logo"></td>
                             <td> +1 (714) 910-9123</td>
                         </tr>                   
                     </table>
-
-                </div>
-                
+                </div>                
             </div>
         </div>
     </body>
