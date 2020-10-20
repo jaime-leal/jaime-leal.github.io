@@ -60,7 +60,4 @@ https://www.w3schools.com/css/css3_images.asp
 
 6. Is there anything special we need to know in order to run your code?
 - Nope!
-- One heads up though. In my valid-accessibility-resume check, it was telling me to add an <noembed>
-as an alternative text but when I would do that, the html checker would give me an error. So,
-I just added and alt="..." tag instead. Also, majority of the warnings on the accessibility checker
-are from my comments.
+- The reason for most of the warnings on the accessibility checker are from my comments.
