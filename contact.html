@@ -9,6 +9,7 @@ EMAIL: jileal@uci.edu
 <!-- 
   SOURCES CITED:
   Nav Bar link: https://getbootstrap.com/docs/4.0/components/navbar/
+  Bootstrap table link: https://getbootstrap.com/docs/4.0/content/tables/
  -->
 
     <head>
@@ -65,17 +66,18 @@ EMAIL: jileal@uci.edu
                     <table class= "table table-hover">                        
                         <!-- First row with LinkedIn logo and link for my profile -->
                         <tr>
-                            <td><img src="iconmonstr-linkedin-3.svg" alt="LinkedIn logo"></td>
+                            <!-- Use scope to let screenreader know that this is the column -->
+                            <th scope="col"><img src="iconmonstr-linkedin-3.svg" alt="LinkedIn logo"></th>
                             <td> <a href = "https://www.linkedin.com/in/jaime-leal-164312184/">LinkedIn</a></td>                            
                         </tr>
                         <!-- Second row with email logo and hyperlink to create an email to me. -->
                         <tr>
-                            <td><img src="email-24px.svg" alt="Email logo"></td>
+                            <th scope="col"><img src="email-24px.svg" alt="Email logo"></th>
                             <td> <a href= "mailto:jileal@uci.edu"> jileal@uci.edu</a></td>   
                         </tr>
                         <!-- Third row with smartphone logo and my personal phone number. -->
                         <tr>
-                            <td><img src="smartphone-24px.svg" alt="Smartphone logo"></td>
+                            <th scope="col"><img src="smartphone-24px.svg" alt="Smartphone logo"></th>
                             <td> +1 (714) 910-9123</td>
                         </tr>                   
                     </table>

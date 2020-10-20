@@ -1,7 +1,7 @@
 /* Changes the font size and family for my name in the Home page */
 h1{
-    font-size: 25;
-    font-family: "DM Serif Display";
+    font-size: medium;
+    font-family: "DM Serif Display", Arial, Helvetica, sans-serif;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     padding: 100px 100px;
 }
@@ -69,7 +69,7 @@ td{
 /* Changes the paragraph font size and family from the About page paragraph. */
 .aboutpara{    
     font-size: x-large;
-    font-family: "Noto Serif TC";
+    font-family: "Noto Serif TC", Arial, Helvetica, sans-serif;
     padding: 100px;
 }
 
