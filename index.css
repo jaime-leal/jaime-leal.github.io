@@ -1,0 +1,72 @@
+/* gradient bg source: https://www.sliderrevolution.com/resources/css-animated-background/ */
+/* blurred box source: https://1stwebdesigner.com/15-css-background-effects/ */
+
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      /* background: linear-gradient(-45deg, #fff474, #f06553, #3c3b5f, #5e2e46); */
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  /* This is for the about me button in the home page. Centers it below my name */
+.moveButton{
+    display: flex;
+    justify-content: center;      
+}
+  
+  h1{
+    font-size: medium;
+    font-family: "DM Serif Display", Arial, Helvetica, sans-serif;
+    justify-content: center;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    padding-left: 100px;
+    padding-top: 70px;  
+    color: black;          
+} 
+
+  .blurred-box{
+    position: relative;    
+    width: 600px;
+    height: 300px;    
+    /* top: calc(50% - 175px); */
+    /* left: calc(50% - 175px); */
+    top: 200px;
+    left: 100px;
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  /* CSS for my image in the home page to put it in a fixed position. */
+
+  .homepicture {
+      padding-top: 80px;
+  }
+
+  img {    
+    width:500px;
+    height:500px;
+    /* width: 100%; */
+    /* height: auto; */    
+    padding-left: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

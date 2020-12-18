@@ -16,8 +16,9 @@ EMAIL: jileal@uci.edu
         <meta charset="utf-8">
         <meta name="author" content="Jaime Leal">
         <meta name="description" content="This is my portfolio and profile :)">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
          <!-- you would link to an external stylesheet here! -->
-         <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="about.css">
          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+TC">
          <!-- you would also link to Bootstrap here! -->
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -49,49 +50,54 @@ EMAIL: jileal@uci.edu
           </nav>
         <!-- Use the paragraph tag for quick bio about myself. -->
         <!-- Use strong tag to emphasize important info. -->
-        <p class="text-center aboutpara">            
-            Hi! My name is <strong>Jaime Ivan Leal</strong> and I am a <strong>fourth year</strong>
-            at the <strong>University of California, Irvine</strong>. <br>My major is <strong>Informatics</strong> with a 
-            specialization in <strong>Human Computer-Interaction</strong>. <br>
-            My hobbies, outside of school, are playing soccer and volleyball, hanging out with friends, <br>
-            and playing videogames online.
-        </p>    
-        <!-- Create separate paragraph for code block using <code></code> -->
-        <p class="text-center codepara">
-            <code>
-            >jaimeLeal.fullName
-                > Jaime Ivan Leal
-            <br>
-            >jaimeLeal.age
-                > 21
-            <br>
-            >jaimeLeal.home 
-                > Santa Ana, CA
-            <br>
-            >jaimeLeal.school
-                > University of California, Irvine
-            <br>
-            >jaimeLeal.year
-                > 4th year
-            <br>
-            >jaimeLeal.major
-                > Informatics
-            <br>
-            >jaimeLeal.specialization
-                > Human Computer-Interaction
-            <br>
-            >jaimeLeal.interests
-                > ["Software Engineering", "Cars", "Nature", "Traveling", "Tacos"]
-            </code>
-        </p>       
-        <!-- Embed image of myself with a card in the background to give depth to the picture. -->
-        <div class="container image1">
-            <img src="5EAE4FC3-0B08-43E6-9F41-9C29DF74F8B5_1_105_c.jpeg" style="width:400px;height:500px;" 
-            alt="Jaime in front of waterfall." class="responsive">
-            <div class="container text">
-                <!-- Leave empty paragraph to not mess up spacing on the background card... -->
-                <p></p>
-            </div>
+        <div class="info-container">        
+          <div class="container aboutpara">
+            <!-- Create separate paragraph for code block using <code></code> --> 
+            <p class="text-center codepara">
+              <code>
+              >jaimeLeal.fullName
+                  => <i> "Jaime Ivan Leal"</i>
+              <br>
+              >jaimeLeal.age
+                   => <i>21</i>
+              <br>
+              >jaimeLeal.home 
+                   => <i>"Santa Ana, CA"</i>
+              <br>
+              >jaimeLeal.school
+                   => <i>"University of California, Irvine"</i>
+              <br>
+              >jaimeLeal.year
+                   => <i>"4th year"</i>
+              <br>
+              >jaimeLeal.major
+                   => <i>"Informatics"</i>
+              <br>
+              >jaimeLeal.specialization
+                   => <i>"Human Computer-Interaction"</i>
+              <br>
+              >jaimeLeal.interests
+                   => <i>["Software Engineering", "Cars", "Nature", "Traveling", "Tacos"]</i>
+              </code>
+          </p>               
+          </div>                    
         </div>
+
+        <!-- Embed image of myself with a card in the background to give depth to the picture. -->                  
+        <div class="container">          
+          <img src="419A3B1A-ACCC-4323-8A14-C288AE8CAC6C_1_105_c.jpeg" alt="Jaime in front of waterfall." class="image">
+          <!-- <img src="5EAE4FC3-0B08-43E6-9F41-9C29DF74F8B5_1_105_c.jpeg" alt="Jaime in front of waterfall." class="image"> -->
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/University_of_California%2C_Irvine_seal.svg/1200px-University_of_California%2C_Irvine_seal.svg.png"
+           style="width:400px; height: 400px;" alt="UCI logo" >          
+          <!-- <div class="overlay overlayLeft">
+            <div class="text">Aquismón, San Luis Potosi, Mexico</div>              
+          </div> -->
+        </div>
+        <!-- <div class="container img2">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/University_of_California%2C_Irvine_seal.svg/1200px-University_of_California%2C_Irvine_seal.svg.png"
+           style="width:400px; height: 400px;" alt="UCI logo" >                    
+        </div> -->
+
+                               
     </body>
 </html>

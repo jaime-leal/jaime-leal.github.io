@@ -6,20 +6,11 @@ h1{
     padding: 100px 100px;
 }
 
-/* CSS for my image in the home page to put it in a fixed position. */
-.responsive {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* This is for the about me button in the home page. Centers it below my name */
-.moveButton{
+/* .moveButton{
     display: flex;
     justify-content: center;      
-}
+} */
 
 /* Makes my image round and use padding to move. */
 img{    

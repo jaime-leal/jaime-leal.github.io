@@ -1,0 +1,134 @@
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {      
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+      /* background: linear-gradient(-45deg,  #074C00, #42A341, #B8E2A3);       */
+      background: linear-gradient(-45deg,  #ffd89b, #f7bc5e, #456c86, #19547b);            
+        background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+  /* Changes the paragraph font size and family from the About page paragraph. */
+.aboutpara p{    
+    font-size: x-large;
+    font-family: "Noto Serif TC", Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+/* creates gray container/block */
+/* .profile-container{
+    height: 100vh;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #20232a;
+    overflow-y: hidden;
+    color: #fff;
+} */
+
+/* tranparent box styling */
+.info-container {        
+    padding-top: 100px;
+    display: flex;    
+    align-items: center;            
+}
+
+/* creates the transparent box behind text */
+.aboutpara{    
+    position: relative;    
+    max-width: 600px;    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+/* code text styling */
+.codepara code{
+    color:white;
+    font-size: 20px;
+}
+
+/* code text styling */
+.codepara code i{    
+    color:black;
+    font-size: 18px;
+}
+
+/* image styling */
+.container img{
+    /* display: block; */
+    /* width: 100%;
+    height: auto; */
+    width:400px;
+    height:500px;    
+}
+
+/* container for image */
+.container {    
+    position: relative; 
+    width: 400px; 
+    height: auto; 
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    justify-content: center;
+    align-items: center;       
+    /* position: relative;
+    width: 50%;     */
+  }
+
+/* picture overlay */
+.overlay{    
+    position: absolute; 
+    transition: all 0.3s ease; 
+    opacity: 0; 
+    background-color: #9bcd9b;
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+
+/* hover picture overlay */
+.container:hover .overlay {        
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    opacity: 1;
+}
+
+.overlayLeft{ 
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    height: 100%; 
+    width: 0; 
+    top: 0; 
+    left: 15px; 
+    background-color: #9bcd9b;; 
+} 
+
+.container:hover .overlayLeft{ 
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    width: 400px; 
+    } 
+
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }

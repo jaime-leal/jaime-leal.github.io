@@ -1,0 +1,76 @@
+/* gradient bg source: https://www.sliderrevolution.com/resources/css-animated-background/ */
+/* blurred box source: https://1stwebdesigner.com/15-css-background-effects/ */
+
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      /* background: linear-gradient(-45deg, #fff474, #f06553, #3c3b5f, #5e2e46); */
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+/* Makes my icons in contact page round and use padding to move. */
+img{    
+    border-radius: 8px;
+    padding: 50px;
+}
+
+/* Centers the paragraphs from the about me page. */
+.col-smAboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.wholeTable a {
+    color:white;        
+}
+
+/* Removes the underline from the LinkedIn link in the contact page. */
+a:link{
+    text-decoration: none;    
+}
+
+/* Changes the text font in the table. Use border-collapse to make table borders touch/flush. */
+.wholeTable{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    padding: 50px;    
+}
+
+/* Removed the border color for the cells to make it look clean and no lines visible. */
+td{
+    text-align: center;
+    padding: 8px;
+    color:white;
+}
+
+/* Keeps the table in position. */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Moves the text from the contact page lower for and shifted for better visibility.  */
+.para{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 100px;
+}
