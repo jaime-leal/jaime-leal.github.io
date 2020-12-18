@@ -88,39 +88,6 @@ html, body {
     width: 50%;     */
   }
 
-/* picture overlay */
-.overlay{    
-    position: absolute; 
-    transition: all 0.3s ease; 
-    opacity: 0; 
-    background-color: #9bcd9b;
-    padding-top: 10px;
-    padding-bottom: 10px;   
-}
-
-/* hover picture overlay */
-.container:hover .overlay {        
-    padding-top: 10px;
-    padding-bottom: 10px;   
-    opacity: 1;
-}
-
-.overlayLeft{ 
-    padding-top: 10px;
-    padding-bottom: 10px;   
-    height: 100%; 
-    width: 0; 
-    top: 0; 
-    left: 15px; 
-    background-color: #9bcd9b;; 
-} 
-
-.container:hover .overlayLeft{ 
-    padding-top: 10px;
-    padding-bottom: 10px;   
-    width: 400px; 
-    } 
-
 .text {
     white-space: nowrap; 
     color: white;

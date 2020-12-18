@@ -58,11 +58,11 @@ html, body {
 
   .homepicture {
       padding-top: 80px;
-  }
+  }  
 
   img {    
     width:500px;
-    height:500px;
+    height:auto;
     /* width: 100%; */
     /* height: auto; */    
     padding-left: 10px;
